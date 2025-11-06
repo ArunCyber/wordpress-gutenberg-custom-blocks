@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wpbs-blocks/testimonials-block",
+	"version": "0.1.0",
+	"title": "Testimonials Block",
+	"category": "wpbs-blocks",
+	"icon": "testimonial",
+	"description": "Block for creating different layouts of Testimonials section.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+        "layout": { 
+            "type": "string", 
+            "default": "layout-one" 
+        },
+        "sectionTitle": {
+            "type": "string",
+            "default": ""
+        },
+        "sectionDescription": {
+            "type": "string", 
+            "default": ""
+        },
+        "testimonials": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "companyLogo": { "type": "string", "default": "" },
+                    "testimonialReview": { "type": "string", "default": "" },
+                    "rating": { "type": "number", "default": 0 },
+                    "clientImage": { "type": "string", "default": "" },
+                    "wysiwygContent": { "type": "string", "default": "" }
+                }
+            }
+        }
+    },
+	"textdomain": "wpbs-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

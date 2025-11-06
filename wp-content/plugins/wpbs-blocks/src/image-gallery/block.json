@@ -1,0 +1,39 @@
+{
+	"apiVersion": 3,
+	"name": "wpbs-blocks/image-gallery",
+	"title": "Image Gallery",
+	"category": "wpbs-blocks",
+	"icon": "format-gallery",
+	"description": "A custom image gallery block with different layouts.",
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"]
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Image Gallery"
+		},
+		"description": {
+			"type": "string",
+			"default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		},
+		"images": {
+			"type": "array",
+			"default": [],
+			"items": {
+				"type": "object"
+			}
+		},
+		"layout": {
+			"type": "string",
+			"default": "simple-3column"
+		}
+	},
+	"textdomain": "wpbs-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

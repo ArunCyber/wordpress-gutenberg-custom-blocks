@@ -1,0 +1,61 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-image-content-section {
+    padding: 25px;
+}
+
+// .layout-selector {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+//     gap: 10px;
+//     margin-top: 10px;
+
+//     .layout-thumb {
+//         background: #fff;
+//         border: 2px solid transparent;
+//         border-radius: 8px;
+//         padding: 5px;
+//         text-align: center;
+//         cursor: pointer;
+//         transition: all 0.2s ease;
+
+//         img {
+//             width: 100%;
+//             height: auto;
+//             border-radius: 6px;
+//             display: block;
+//         }
+
+//         span {
+//             font-size: 12px;
+//             display: block;
+//             margin-top: 4px;
+//             color: #555;
+//         }
+
+//         &:hover {
+//             border-color: #007cba;
+//             background: #f2f7ff;
+//         }
+
+//         &.active {
+//             border-color: #007cba;
+//             background: #e7f2ff;
+//         }
+//     }
+// }
+
+// .image-preview {
+//     margin-top: 10px;
+
+//     img {
+//         width: 100%;
+//         max-height: 150px;
+//         object-fit: cover;
+//         border-radius: 6px;
+//     }
+// }

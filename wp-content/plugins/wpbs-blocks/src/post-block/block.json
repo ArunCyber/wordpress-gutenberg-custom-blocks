@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wpbs-blocks/post-block",
+	"version": "0.1.0",
+	"title": "Post Block",
+	"category": "wpbs-blocks",
+	"icon": "admin-post",
+	"description": "Display posts from different post types with customizable options.",
+	"example": {},
+	"attributes": {
+		"postType": {
+			"type": "string",
+			"default": "post"
+		},
+		"numberOfPosts": {
+			"type": "number",
+			"default": 3
+		},
+		"displayDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayAuthor": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayExcerpt": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayFeaturedImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"layout": {
+			"type": "string",
+			"default": "grid"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "wpbs-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
